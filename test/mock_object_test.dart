@@ -38,12 +38,12 @@ void main(){
 
     });
 
-    test("Find book by id eko123", (){
-      when(bookRepository.findById(argThat(startsWith("eko"))))
-          .thenReturn(Book("eko123", "Tutorial Dart", 100000));
+    test("Find book by id iqbal123", (){
+      when(bookRepository.findById(argThat(startsWith("iqbal"))))
+          .thenReturn(Book("iqbal123", "Tutorial Dart", 100000));
 
-      var book = bookService.find("eko123");
-      expect(book, equals(Book("eko123", "Tutorial Dart", 100000)));
+      var book = bookService.find("iqbal123");
+      expect(book, equals(Book("iqbal123", "Tutorial Dart", 100000)));
 
       verify(bookRepository.findById(any)).called(1);
     });

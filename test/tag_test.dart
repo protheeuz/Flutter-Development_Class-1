@@ -1,14 +1,13 @@
-
 @Tags(["mathtech", "iqbal"])
 
 import 'package:test/scaffolding.dart';
 
-void main(){
-  test("test first", (){
+void main() {
+  test("test first", () {
     print("first");
   }, tags: ["first"]);
 
-  test("test second", (){
+  test("test second", () {
     print("second");
   }, tags: ["second"]);
 }

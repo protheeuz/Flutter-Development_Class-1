@@ -1,5 +1,5 @@
 
-@Tags(["pzn", "eko"])
+@Tags(["mathtech", "iqbal"])
 
 import 'package:test/scaffolding.dart';
 

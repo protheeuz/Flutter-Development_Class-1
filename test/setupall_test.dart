@@ -1,34 +1,30 @@
 import 'package:test/test.dart';
 
-void main(){
-
+void main() {
   var data = "Iqbal";
 
-  setUpAll((){
+  setUpAll(() {
     print("Start unit test");
   });
 
-  setUp((){
+  setUp(() {
     data = "Iqbal";
     print(data);
   });
 
-  tearDown((){
+  tearDown(() {
     print(data);
   });
 
-  group("Test String", (){
-
-    test("String first", (){
+  group("Test String", () {
+    test("String first", () {
       data = "$data Fauzi";
       expect(data, equals("Iqbal Fauzi"));
     });
 
-    test("String second", (){
-      data = "$data Khannedy";
+    test("String second", () {
+      data = "$data Fauzi";
       expect(data, equals("Iqbal Fauzi"));
     });
-
   });
-
 }
